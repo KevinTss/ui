@@ -5,5 +5,6 @@ export default { component: Button, title: 'Button'}
 
 export const button = () => {
   const message =  'Click here now!'
-  return <Button message={message}></Button>
+  
+  return <Button>{message}</Button>;
 }
