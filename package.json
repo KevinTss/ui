@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "build:storybook": "build-storybook -- -o ./static",
     "start": "start-storybook -p 9009 --no-open"
   },
   "keywords": [
