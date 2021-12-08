@@ -6,7 +6,11 @@
   "scripts": {
     "build": "webpack",
     "build:storybook": "build-storybook -- -o ./static",
-    "start": "start-storybook -p 9009 --no-open"
+    "start": "start-storybook -p 9009 --no-open",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint src/** --fix",
+    "format": "prettier --check 'src/**/*'",
+    "format:write": "prettier --write 'src/**/*'"
   },
   "keywords": [
     "ui"
@@ -20,6 +24,10 @@
     "@storybook/react": "^6.4.4",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.27.1",
+    "prettier": "^2.5.1",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-node-externals": "^3.0.0"
